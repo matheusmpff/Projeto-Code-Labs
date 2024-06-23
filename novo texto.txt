@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 teste 
 aoienrjb
+=======
+editado mano
+
+>>>>>>> cc4ba5c5689256cd9696cd26181559b6cc9c4e43
