@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+/* parte do efeito paralax*/
+html{
+    height: 500vh;
+}
+
+section{
+    width: 100%;
+    height:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+
+    
+
+    background-attachment: fixed;
+}
+
+section:nth-of-type(1){
+    background-image: url("mateusz-d-Y1SXpVHi_vg-unsplash.jpg");
+    
+    
+   
+    height: 1100px;
+}
+/*Fim do efeito paralax*/
+
+/*Inicio do CSS do header*/
+header{
+
+    width: 100%;
+    padding: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+
+
+}
+header.rolagem a{
+    color: black;
+}
+
+.conteiner{
+
+    max-width: 1280px;
+    margin: auto;
+
+
+}
+
+
+
+.flex{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.logo{
+    width: 210px;
+    height: auto;
+}
+
+
+
+header ul{
+    list-style-type: none;
+}
+header ul li {
+    display: inline-block;
+    margin: 40px;
+}
+
+header ul li a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Fim do Header*/
+
+/*Inicio do CSS dos botões*/
+
+section{
+    padding: 300px;
+}
+
+
+section ul{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+
+section ul a {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    
+}
+
+section ul li{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 8px 25px #0000004f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition:0.3s;
+}
+
+section ul li span {
+    position: absolute;
+}
+
+
+section ul li:hover{
+    width: 180px;
+    border-radius: 60px;
+}
+
+.icon{
+    color: #ccc;
+    font-size: 2.2rem;
+    scale: .2s;
+}
+
+.text-icon{
+    color: #fff;
+    font-size: 20px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: 0.1s;
+    
+}
+section ul li:hover .text-icon{
+    transform: scale(1);
+}
+
+section ul li:hover .icon{
+    transform: scale(0);
+}
+
+section ul li::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1),var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+section ul li:hover::before{
+    opacity: 1;
+}
+/*Fim do CSS dos botões*/
+
+/*Inicio do CSS da janela modal*/
+
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.418);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    
+}
+
+.modal{
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #ffffff81;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+
+    
+    
+
+    
+    
+    
+}
+
+.fechar{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background-color: red;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.janela-modal.abrir{
+    display: flex;
+}
+/*Fim da janela modal*/
+
+/*Inicio do forms*/
+#form1, #form2, #form3{
+    
+    border: none;
+    position: relative;
+    left: 275px;
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #0000005f;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, var(--cor1),var(--cor2));
+   
+
+}
+
+#form1 p,#form2 p,#form3 p{
+    color: #fff;
+
+}
+
+.input{
+    background-color: #fff;
+    border: none;
+    
+    border-radius: 20px;
+    text-align: center;
+    
+
+}

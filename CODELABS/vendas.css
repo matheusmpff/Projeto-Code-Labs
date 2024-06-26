@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+/* parte do efeito paralax*/
+html{
+    height: 500vh;
+}
+
+section{
+    width: 100%;
+    height:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+
+    
+
+    background-attachment: fixed;
+}
+
+section:nth-of-type(1){
+    background-image: url("pexels-gustavoraton-9500627.jpg");
+    
+    
+   
+    height: 1100px;
+}
+/*Fim do efeito paralax*/
+
+/*Inicio do CSS do header*/
+header{
+
+    width: 100%;
+    padding: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+
+
+}
+header.rolagem a{
+    color: black;
+}
+
+.conteiner{
+
+    max-width: 1280px;
+    margin: auto;
+
+
+}
+
+
+
+.flex{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.logo{
+    width: 210px;
+    height: auto;
+}
+
+
+
+header ul{
+    list-style-type: none;
+}
+header ul li {
+    display: inline-block;
+    margin: 40px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*Fim do Header*/
+
+/*Inicio da pesuisa*/
+
+section h1{
+    padding: 50px;
+    font-size: 50px;
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+}
+
+.botao{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+/*Fim da pesquisa*/
+
+/*Inicio da lista*/
+
+
+
+section td{
+    padding: 12px;
+}
+
+section tr{
+    background-color: #cdcdcd;
+}
+
+section caption{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+section th{
+    background-color: #000;
+    color: #fff;
+}
+/*Fim da Lista*/
+
+/*Inicio do CSS da janela modal*/
+
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.418);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    
+}
+
+.modal{
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #ffffff81;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+
+    
+    
+
+    
+    
+    
+}
+
+.fechar{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background-color: red;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.janela-modal.abrir{
+    display: flex;
+}
+/*Fim da janela modal*/
+
+
+

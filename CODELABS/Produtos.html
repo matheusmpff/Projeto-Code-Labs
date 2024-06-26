@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+
+    <!--Topo da página e back groud com efeito paralax-->
+    <header id="header">
+        <div class="conteiner">
+            <div class="flex">
+
+                <a href="index.html"><img src="Captura_de_tela_2024-06-22_131834-removebg-preview.png" class="logo" alt=""></a>
+
+                <ul>
+                    <li><a href="Clientes.html">Clientes</a></li>
+                    <li><a href="Produtos.html">Produtos</a></li>
+                    <li><a href="vendas.html">Vendas</a></li>
+                </ul>
+               
+
+
+                
+            </div>
+
+            
+               
+
+        </div>
+            
+
+    </header>
+    <section></section>
+
+    <section class="pesquisa">
+
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        
+        <table>
+            <caption>Dados dos Produtos Cadastrados</caption>
+            <thead>
+              <tr>
+                <th>produto</th> 
+                <th>preco</th>
+              </tr>
+            </thead>
+            <tbody id="tabela "data-sheetdb-url="https://sheetdb.io/api/v1/7sjuyeffsk5iu" data-sheetdb-sheet="produtos">
+              <tr>
+                <td>{{produto}}</td>
+                <td>{{preco}}</td>
+              </tr>
+            </tbody>
+          </table>
+          
+    </section>
+    
+
+    
+
+    <script src="menu.js"></script>
+    <script src="//sheetdb.io/api/js"></script>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+
+    <!--Fim da parte citada logo a cima-->
+
+
+    
+</body>
+</html>

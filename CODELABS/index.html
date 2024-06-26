@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="//sheetdb.io/api/js"></script>
+</head>
+<body>
+
+    <!--Topo da página e back groud com efeito paralax-->
+    <header id="header">
+        <div class="conteiner">
+            <div class="flex">
+
+                <a href="index.html"><img src="Captura_de_tela_2024-06-22_131834-removebg-preview.png" class="logo" alt=""></a>
+
+                <ul>
+                    <li><a href="Clientes.html">Clientes</a></li>
+                    <li><a href="Produtos.html">Produtos</a></li>
+                    <li><a href="vendas.html">Vendas</a></li>
+                </ul>
+               
+
+
+                
+            </div>
+
+            
+               
+
+        </div>
+            
+
+    </header>
+    <section></section>
+   
+
+    <!--Fim da parte citada logo a cima-->
+
+    <!--Botões de interação que levam para as planilhas-->
+    <section>
+        <ul>
+            <a onclick="abrirModal1()">
+                <li style="--cor1: #43fe84;--cor2:#2dbc5d;">
+                    <span class="icon"><i class="bi bi-cart3"></i></span>
+                    <span class="text-icon">Adicionar venda</span>
+                </li>
+            </a>
+                
+            <a onclick="abrirModal2()">
+                <li style=" --cor1: #0265ee;--cor2:#00b5f1;">
+                    <span class="icon"><i class="bi bi-person-add"></i></span>
+                    <span class="text-icon">Adicionar cliente</span>
+                </li>
+            </a>
+            <a onclick="abrirModal3()">
+                <li style="--cor1: #fa0101;--cor2:#ffa200;" >
+                    <span class="icon"><i class="bi bi-cake"></i></i></span>
+                    <span class="text-icon">Adicionar produto</span>
+                </li>
+            </a>
+
+            
+        </ul>
+        <!--Fim do que foi citado a cima-->
+
+    <!--Janela Modal dos forms-->
+
+    <div class="janela-modal" id="janela-modal1" >
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <form action="" id="form1" style="--cor1: #43fe84;--cor2:#2dbc5d;">
+                
+                <p>Formulário para cadastro de venda</p>
+                <input type="text" name="nome1" id="nome1" class="input" placeholder="nome do cliente" required> <br>
+                
+                <input type="text" name="produto1" class="input" id="produto1" placeholder="produto" required>  <br>
+                
+                <input type="text" name="quantidade " class="input" id="quantidade" placeholder="quantidade" required>  <br>
+                
+                <input type="date" name="data1" class="input" id="data1" required> <br>
+
+                <input type="submit" value="enviar" class="input" onclick="salvarCompra()">
+            </form>
+            </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal2" >
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+           
+            <form action="" id="form2" style=" --cor1: #0265ee;--cor2:#00b5f1;">
+                
+                
+                <p>Formulário pra cadastro de Cliente</p>
+                <input type="text" name="nome2" class="input" id="nome2" placeholder="nome do cliente" required> <br>
+                
+                <input type="text" name="endereco" class="input" id="endereco" placeholder="endereço" required> <br>
+                
+                <input type="text" name="contato" class="input" id="contato" placeholder="Número de telefone" required>  <br>
+
+                <input type="submit" class="input" onclick="salvarCliente()"  value="enviar">
+            </form>
+            </div>
+    </div>
+
+    <div class="janela-modal"  id="janela-modal3"  >
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <form action="" id="form3"  style="--cor1: #fa0101;--cor2:#ffa200;">
+                
+                <p>Formulário para cadastro de produto</p>
+                <input type="text" class="input" name="produto3" id="produto3" placeholder="produto" required> <br>
+                
+                <input type="text"  class="input" name="preco" id="preco" placeholder="preço do produto" required> <br>
+
+                <input type="submit" class="input"  onclick="salvarProduto()" value="enviar">
+            </form>
+            </div>
+    </div>
+            
+    </section>
+    
+
+    
+    
+
+   
+
+   
+
+    
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
